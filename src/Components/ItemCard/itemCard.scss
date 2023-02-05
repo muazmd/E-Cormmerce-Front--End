@@ -1,0 +1,137 @@
+.itemCard{
+    display: flex; 
+    flex-direction:column;
+    align-items:left;
+    padding: 40px;
+    flex-wrap: wrap;
+    position: relative;
+    .itemCard-top{
+        position: relative;
+        .itemCard-top-Icons{
+        display: none;
+        transition: transform 2s;
+        }
+        img{
+
+            border-radius: 10px;
+            width: 450px;
+            height: 300px;
+        }
+        &:hover{
+            
+
+            img{
+                filter: blur(3px);
+
+            }
+            .itemCard-top-Icons{
+                
+                position: absolute;
+                width: 100px;
+                
+                display: flex;
+                justify-content: space-between;
+                top: 130px;
+                left: 190px;
+                color: white;
+                .icons{
+                    cursor: pointer;
+
+                }
+                .itemCard-prices{
+                    display: flex;
+                    align-items: center;
+                    
+
+                }
+                
+            }
+         }
+    }
+    .itemCard-bottom{
+        display: flex;
+        align-items: left;
+        flex-direction: column;  
+        .itemCard-Title{
+            font-size: 24px;
+        }
+        .itemCard-prices{
+            width:40%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            .itemCard-price{
+                color: green;
+            }
+            .itemCard-oldPrice{
+                text-decoration: line-through;
+                color: red;
+            }
+        }
+      }
+
+}
+.itemCard-popup{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    .itemCard-top-popup{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        height: 360px;
+
+        img{
+            margin-right: 15px;
+            border-radius: 15px;
+            height:300px;
+        }
+        .itemCard-btns{
+            
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            .btn{
+                background-color: green !important;
+                color:#000;
+            }
+            .red{
+                background-color: lightblue !important;
+            }
+        }
+    }
+    .itemCard-bottom-popup{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .itemCard-Title-popup{
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .itemCard-desc-popup{
+            font-size: 13px;
+            text-align: left;
+            line-height: 1.5;
+           
+
+        }
+        .itemCard-prices-popup{
+        
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            // width: 50%;
+            justify-content: space-evenly;
+            .itemCard-price-popup{
+                font-size: 17px;
+                font-weight: 600;
+                color:green;
+            }
+            .itemCard-oldPrice-popup{
+                color: red;
+                text-decoration: line-through;
+            }
+        }
+
+    }
+}

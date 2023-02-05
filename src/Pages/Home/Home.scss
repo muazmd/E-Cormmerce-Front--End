@@ -1,0 +1,23 @@
+.categories{
+    position: relative;
+    // margin-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+.itemCards{
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 100vh;
+}
+.ItemCard-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: darkgrey;  
+}
+
+
